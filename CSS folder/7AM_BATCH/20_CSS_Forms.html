@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS forms</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="bootstrap/css/font-awesome.min.css">
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background-image: url("img/gallery1.jpeg");
+            background-size: cover;
+
+        }
+        .form-div{
+            background-image: url("https://media1.tenor.com/images/8e8c72a1459ad7332b14306bea1af865/tenor.gif?itemid=4983096");
+            border:3px solid blue;
+            width: 250px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .form-div h2
+            {
+            color: white;
+
+        }
+        input[type='text'],input[type='password']
+            {
+            height: 40px;
+            text-align: center;
+            border: 2px solid blue;
+            margin: 10px;
+            border-radius: 15px;
+            font-size: 18px;
+            width: 200px;
+        }
+        input[type='text'],input[type='password']:focus
+            {
+            outline: none;
+            background-color: yellow;
+            }
+
+        input[type='submit']{
+            background-color: blue;
+            color: white;
+            font-size: 18px;
+            padding: 10px 25px;
+            margin: 10px;
+            border-radius: 50px ;
+        }
+        input[type='submit']:hover{
+            background-color: green;
+            cursor: pointer;
+            box-shadow: 5px 5px 15px lightblue;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+
+    <!-- Login Form -->
+    <div class="form-div">
+        <h2>Login Here</h2>
+        <form>
+            <input type="text" placeholder="User Name">
+            <br>
+            <input type="password" placeholder="Password">
+            <br>
+            <input type="submit" value="Login">
+        </form>
+    </div>
+
+</body>
+</html>

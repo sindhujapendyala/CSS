@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        <title>CSS3 Animation</title>
+        <style>
+            body{
+                font-family: "Comic Sans MS",sans-serif;
+            }
+            .football{
+                margin-bottom: 250px;
+                background-image: url("https://lh3.googleusercontent.com/85rSzD5xdUV15EtcMDUPzwfuwR065sgxh8GRxJsJ0IOM9lPDgj27Kkg8E95BJ3lvfC1owKadIDikYHxyI92wD1rN4EWY3q6JfYW08pV8PsSUoRkbRzTPf1AfTsqI--ZRApL61WJtAUtAC2_GccX5jos6X2Iq46Ha1KJ23XNGCmoErWUi-VUVzqewztS1dxpkF_W0OlwbspqJ-QYVmFPjPCQiz1Igb0ecfETN2AbyORx_MWwo4e6070oS6003GCOS2Bpa0vm31P_BTU_WkRR-BbqHoj28a0Loy6K8GBKbzdIeu6PHNaHNyuQKgh_--p0cJ_TFfXC0jZZ8dhQPJfnL0onNmZBcWQ2CaoXvWcT8u3sEQVe24DHMIHLmQgDY3N7Yp4oFur5VguIyMRK_oHe4EBR0eBWCSwpmHl0VYG1QX4_sD8GeQcW68HnYI-3ZALrgJbzLJncRdUQH9bOH415UKDDQohXMJGtOdp6qSCGHfzvZujtW4ZzS3sj4m_oZ0yttPtAvnRMtKBOH80Ez_QmPxq2bDNgU3gaRQv8ZLMPpSXpLUo0lj7D-r-jhoJ4hhDAhZv9LFXM9U3HDnaz2BYdLwrLKd2frRQstIigJ8zQq=w1250-h938-no");
+                width: 85px;
+                height: 85px;
+                animation: football 10s infinite linear;
+                position: relative;
+            }
+            @keyframes football {
+                0%,100%{
+                    top:0;
+                    left: 0;
+                    transform: rotate(90deg);
+                }
+                10%,90%{
+                    top:200px;
+                    left: 200px;
+                    transform: rotate(180deg);
+                }
+                20%,80%{
+                    top:0;
+                    left: 400px;
+                    transform: rotate(270deg);
+                }
+                30%,70%{
+                    top:200px;
+                    left: 600px;
+                    transform: rotate(360deg);
+                }
+                40%,60%{
+                    top:0;
+                    left: 800px;
+                    transform: rotate(0deg);
+                }
+                50%{
+                    top:200px;
+                    left: 1000px;
+                    transform: rotate(360deg);
+                }
+            }
+
+        </style>
+</head>
+<body>
+
+<!-- Foot Ball Animation -->
+<h3>Foot Ball Animation</h3>
+<div class="football"></div>
+
+
+</body>
+</html>
